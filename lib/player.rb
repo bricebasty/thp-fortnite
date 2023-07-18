@@ -1,3 +1,8 @@
+# frozen_string_literal: true
+
+require 'English'
+
+# Classe représentant un joueur
 class Player
   attr_accessor :name, :life_points
 
@@ -12,7 +17,7 @@ class Player
 
   def gets_damage(damage)
     @life_points = [@life_points - damage, 0].max
-    puts "\n\e[41m\e[30mLe joueur #{@name} a été tué !\e[0m" if  @life_points == 0
+    puts "\n\e[41m\e[30mLe joueur #{@name} a été tué !\e[0m" if @life_points.zero?
   end
 
   def compute_damage
@@ -21,19 +26,21 @@ class Player
 
   def attacks(other_player)
     damage = compute_damage
-    if other_player.life_points > 0
-      puts "\n\e[33m\e[1m#{@name}\e[31m attaque \e[33m#{other_player::name}\e[0m et lui inflige \e[31m\e[1m#{damage} point(s) de dommages\e[0m"
-      other_player.gets_damage(damage)
-      sleep 0.5
-    end
+    return unless other_player.life_points.positive?
+
+    puts "\n\e[33m\e[1m#{@name}\e[31m inflige #{damage} point(s) de dommages à \e[33m#{other_player.name}\e[0m"
+    other_player.gets_damage(damage)
+    sleep 0.5
   end
 end
 
+# La classe HumanPlayer hérite de la classe Player.
+# Elle représente un joueur humain dans le jeu.
 class HumanPlayer < Player
   attr_accessor :weapon_level
 
   def initialize(name)
-    @name = name
+    super(name)
     @life_points = 100
     @weapon_level = 1
   end
@@ -43,7 +50,8 @@ class HumanPlayer < Player
   end
 
   def compute_damage
-    rand(1..6) * @weapon_level # Calcule les dégâts aléatoires multipliés par le niveau de l'arme du joueur
+    # Calcule les dégâts aléatoires multipliés par le niveau de l'arme du joueur
+    rand(1..6) * @weapon_level
   end
 
   def search_weapon
@@ -54,22 +62,22 @@ class HumanPlayer < Player
       puts "\n\e[32mYouhou ! elle est meilleure que ton arme actuelle : \e[1mtu la prends.\e[0m"
       sleep 0.5
     elsif found_weapon_level <= @weapon_level
-      puts "\n\e[31m\e[1mM@*#$... \e[0m\e[31melle n'est pas mieux que ton arme actuelle...\e[0m"
+      puts "\n\e[31m\e[1mM@*#{$INPUT_LINE_NUMBER}.. \e[0m\e[31melle n'est pas mieux que ton arme actuelle...\e[0m"
       sleep 0.5
     end
   end
 
   def search_health_pack
-    dice = rand(1..6) # Lance un dé aléatoire entre 1 et 6
+    dice = rand(1..6)
     case dice
-    when 1
-      puts "\nTu n'as rien trouvé"
-    when 2..5
-      @life_points = (@life_points + 50).clamp(0, 100) # Ajoute 50 points de vie en s'assurant que la vie ne dépasse pas 100
-      puts "\nBravo, tu as trouvé un pack de \e[32m+50 points de vie !\e[0m"
-    when 6
-      @life_points = (@life_points + 80).clamp(0, 100) # Ajoute 80 points de vie en s'assurant que la vie ne dépasse pas 100
-      puts "\nWaow, tu as trouvé un pack de \e[36m+80 points de vie !\e[0m"
+    when 1 then puts "\nTu n'as rien trouvé"
+    when 2..5 then heal_player(50, "\nBravo, tu as trouvé un pack de \e[32m+50 points de vie !\e[0m")
+    when 6 then heal_player(80, "\nWaow, tu as trouvé un pack de \e[36m+80 points de vie !\e[0m")
     end
+  end
+
+  def heal_player(healing_points, message)
+    @life_points = (@life_points + healing_points).clamp(0, 100)
+    puts message
   end
 end
