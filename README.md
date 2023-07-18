@@ -110,4 +110,4 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 
 Made with ❤️ by [Brice Basty](https://github.com/bricebasty)
 
-`<a href="#top">`Back to top `</a>`
+[Back to top](#top)
