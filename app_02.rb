@@ -70,4 +70,3 @@ def play
 end
 
 play
-# binding.pry
