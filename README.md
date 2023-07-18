@@ -10,15 +10,15 @@
 <h1 align="center">THP Fortnite</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8"></p>
 
-`<img alt="Github language count" src="https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8">`
+`<p align="center"><img alt="Github language count" src="https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8"></p>`
 
-`<img alt="Repository size" src="https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8">`
+`<p align="center"><img alt="Repository size" src="https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8"></p>`
 
-<img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8">
+<p align="center"><img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8"></p>
 
-`<img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8" /></p>`
+`<p align="center"><img alt="Github issues" src="https://img.shields.io/github/issues/bricebasty/thp-fortnite?color=56BEB8" /></p>`
 
 <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8" /> -->
 
@@ -34,12 +34,12 @@
 
 <p align="center">
   <a href="#dart-about">About</a>   |   
-  <a href="#sparkles-features">Features</a>   |  
-  <a href="#rocket-technologies">Technologies</a>   |  
-  <a href="#white_check_mark-requirements">Requirements</a>   |  
-  <a href="#checkered_flag-starting">Starting</a>   |  
-  <a href="#memo-license">License</a>   |  
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="#features">Features</a>   |  
+  <a href="#technologies">Technologies</a>   |  
+  <a href="#requirements">Requirements</a>   |  
+  <a href="#starting">Starting</a>   |  
+  <a href="#license">License</a>   |  
+  <a href="https://github.com/bricebasty" target="_blank">Author</a>
 </p>
 
 <br>
@@ -48,7 +48,7 @@
 
 The combat game program is a text-based, turn-by-turn battle simulation. Players control a character and engage in combat with enemy players. The objective is to defeat all enemy players while managing resources, such as health packs and weapons, to survive and emerge as the last player standing. The game is implemented using Object-Oriented Programming (OOP) principles and provides an interactive and challenging gameplay experience.
 
-## ✨ Features
+## ✨ [Features](#features)
 
 ✔️ Turn-by-turn combat simulation
 ✔️ Player vs. enemy player battles
@@ -75,7 +75,7 @@ The following tools were used in this project:
 
 ## ✅ Requirements
 
-Before starting 🏁, you need to have [Git](https://git-scm.com) and [Ruby 3.0.0](https://www.ruby-lang.org/en/) installed.
+Before starting 🏁, you need to have [Git](https://git-scm.com), [Ruby ](https://www.ruby-lang.org/en/)and [Bundler](https://bundler.io/) installed installed.
 
 ## 🏁 Starting
 
