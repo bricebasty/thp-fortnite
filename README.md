@@ -51,16 +51,27 @@ The combat game program is a text-based, turn-by-turn battle simulation. Players
 ## ✨ [Features](#features)
 
 ✔️ Turn-by-turn combat simulation
+
 ✔️ Player vs. enemy player battles
+
 ✔️ Player actions: search for better weapons, search for health packs, and attack enemies
+
 ✔️ Gradual appearance of new enemy players
+
 ✔️ Player attributes: name, life points, weapon level
+
 ✔️ Enemy player attributes: name, life points
+
 ✔️ Human player attributes: extended health points (up to 100), ability to find better weapons
+
 ✔️ Multiple game versions with increasing complexity
+
 ✔️ Object-Oriented Programming (OOP) principles used for code organization
+
 ✔️ Interactive command-line interface
+
 ✔️ Dynamic display of player and enemy states
+
 ✔️ Game outcome display (win or lose)
 
 ## 🚀 Technologies
