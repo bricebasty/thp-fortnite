@@ -9,16 +9,15 @@
 
 <h1 align="center">THP Fortnite</h1>
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8"></p>
+![Top Language](https://img.shields.io/github/languages/top/bricebasty/thp-fortnite?color=56BEB8)
 
-`<p align="center"><img alt="Github language count" src="https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8"></p>`
+![Languages](https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8)
 
-`<p align="center"><img alt="Repository size" src="https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8"></p>`
+![Size](https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8)
 
-<p align="center"><img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8"></p>
+![License](https://img.shields.io/github/license/bricebasty/thp-fortnite?color=56BEB8)
 
-`<p align="center"><img alt="Github issues" src="https://img.shields.io/github/issues/bricebasty/thp-fortnite?color=56BEB8" /></p>`
+![Issues](https://img.shields.io/github/issues/bricebasty/thp-fortnite?color=56BEB8)
 
 <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8" /> -->
 
@@ -48,7 +47,7 @@
 
 The combat game program is a text-based, turn-by-turn battle simulation. Players control a character and engage in combat with enemy players. The objective is to defeat all enemy players while managing resources, such as health packs and weapons, to survive and emerge as the last player standing. The game is implemented using Object-Oriented Programming (OOP) principles and provides an interactive and challenging gameplay experience.
 
-## ✨ [Features](#features)
+## ✨ Features
 
 ✔️ Turn-by-turn combat simulation
 
