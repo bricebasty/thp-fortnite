@@ -16,7 +16,7 @@ class Player
   end
 
   def compute_damage
-    rand(1..6)
+    rand(1..6) # Calcule les dégâts aléatoires entre 1 et 6
   end
 
   def attacks(other_player)
@@ -43,11 +43,11 @@ class HumanPlayer < Player
   end
 
   def compute_damage
-    rand(1..6) * @weapon_level
+    rand(1..6) * @weapon_level # Calcule les dégâts aléatoires multipliés par le niveau de l'arme du joueur
   end
 
   def search_weapon
-    found_weapon_level = rand(1..6)
+    found_weapon_level = rand(1..6) # Génère un niveau d'arme aléatoire entre 1 et 6
     puts "\n\e[36mTu as trouvé une arme de niveau #{found_weapon_level}\e[0m"
     if found_weapon_level > @weapon_level
       @weapon_level = found_weapon_level
@@ -60,15 +60,15 @@ class HumanPlayer < Player
   end
 
   def search_health_pack
-    dice = rand(1..6)
+    dice = rand(1..6) # Lance un dé aléatoire entre 1 et 6
     case dice
     when 1
       puts "\nTu n'as rien trouvé"
     when 2..5
-      @life_points = (@life_points + 50).clamp(0, 100)
+      @life_points = (@life_points + 50).clamp(0, 100) # Ajoute 50 points de vie en s'assurant que la vie ne dépasse pas 100
       puts "\nBravo, tu as trouvé un pack de \e[32m+50 points de vie !\e[0m"
     when 6
-      @life_points = (@life_points + 80).clamp(0, 100)
+      @life_points = (@life_points + 80).clamp(0, 100) # Ajoute 80 points de vie en s'assurant que la vie ne dépasse pas 100
       puts "\nWaow, tu as trouvé un pack de \e[36m+80 points de vie !\e[0m"
     end
   end
