@@ -49,7 +49,7 @@ def play
       when 's' then user.search_health_pack
       when '1' then user.attacks(player1)
       when '2' then user.attacks(player2)
-      when 'x' then break
+      when 'x' then exit
       else
         puts "\n\e[41m\e[30m\e[1mEntrée invalide.\e[0m"
         retry_flag = true
