@@ -77,7 +77,7 @@ The following tools were used in this project:
 
 ## ✅ Requirements
 
-Before starting 🏁, you need to have [Git](https://git-scm.com), [Ruby ](https://www.ruby-lang.org/en/)and [Bundler](https://bundler.io/) installed installed.
+Before starting 🏁, you need to have [Git](https://git-scm.com), [Ruby ](https://www.ruby-lang.org/en/)and [Bundler](https://bundler.io/) installed.
 
 ## 🏁 Starting
 
