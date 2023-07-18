@@ -9,15 +9,7 @@
 
 <h1 align="center">THP Fortnite</h1>
 
-![Top Language](https://img.shields.io/github/languages/top/bricebasty/thp-fortnite?color=56BEB8)
-
-![Languages](https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8)
-
-![Size](https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8)
-
-![License](https://img.shields.io/github/license/bricebasty/thp-fortnite?color=56BEB8)
-
-![Issues](https://img.shields.io/github/issues/bricebasty/thp-fortnite?color=56BEB8)
+![Top Language](https://img.shields.io/github/languages/top/bricebasty/thp-fortnite?color=56BEB8) ![Languages](https://img.shields.io/github/languages/count/bricebasty/thp-fortnite?color=56BEB8) ![Size](https://img.shields.io/github/repo-size/bricebasty/thp-fortnite?color=56BEB8) ![License](https://img.shields.io/github/license/bricebasty/thp-fortnite?color=56BEB8) ![Issues](https://img.shields.io/github/issues/bricebasty/thp-fortnite?color=56BEB8)
 
 <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/thp-fortnite?color=56BEB8" /> -->
 
