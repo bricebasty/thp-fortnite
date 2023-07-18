@@ -33,12 +33,12 @@
 <hr> -->
 
 <p align="center">
-  <a href="#dart-about">About</a>   |   
+  <a href="#-about">About</a>   |   
   <a href="#-features">Features</a>   |  
-  <a href="#technologies">Technologies</a>   |  
-  <a href="#requirements">Requirements</a>   |  
-  <a href="#starting">Starting</a>   |  
-  <a href="#license">License</a>   |  
+  <a href="#-technologies">Technologies</a>   |  
+  <a href="#-requirements">Requirements</a>   |  
+  <a href="#-starting">Starting</a>   |  
+  <a href="#-license">License</a>   |  
   <a href="https://github.com/bricebasty" target="_blank">Author</a>
 </p>
 
