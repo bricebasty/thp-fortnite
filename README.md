@@ -91,8 +91,14 @@ $ cd thp-fortnite
 # Install dependencies
 $ bundle install
 
-# Run the project
+# Run the project 1
 $ ruby app.rb
+
+# Run the project 2
+$ ruby app_02.rb
+
+# Run the project 3
+$ ruby app_03.rb
 ```
 
 ## 📝 License
