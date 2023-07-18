@@ -25,29 +25,6 @@ class Game
     @human_player.life_points.positive? && @players_left.positive?
   end
 
-  # def new_players_in_sight
-  #   new_players = rand(1..6) # Génère un nombre aléatoire de nouveaux joueurs
-  #   if @enemies_in_sight.count != @players_left && @enemies_in_sight.length <= 10
-  #   # Vérifie s'il y a encore des joueurs à ajouter et si le nombre total d'ennemis en vue est inférieur ou égal à 10
-  #     case new_players
-  #     when 1
-  #       puts "\n\e[36mAucun nouveau joueur adverse n'arrive\e[0m" # Aucun nouveau joueur n'arrive
-  #     when (2..4)
-  #       @enemies_in_sight << Player.new("Joueur_#{rand(1000..9999)}") # Ajoute un nouvel ennemi dans le tableau
-  #       puts "\n\e[36m1 adversaire arrive\e[0m" # Affiche qu'un nouvel ennemi arrive
-  #     when (5..6)
-  #       2.times do
-  #         break if @enemies_in_sight.length >= 10 # Arrête l'ajout d'ennemis si le nombre total atteint 10
-
-  #         @enemies_in_sight << Player.new("Joueur_#{rand(1000..9999)}") # Ajoute deux nouveaux ennemis dans le tableau
-  #       end
-  #       puts "\n\e[36m2 adversaires arrivent\e[0m" # Affiche que deux nouveaux ennemis arrivent
-  #     end
-  #   else
-  #     puts "\n\e[36mTous les joueurs sont déjà en vue\e[0m" # Affiche que tous les joueurs sont déjà en vue
-  #   end
-  # end
-
   def new_players_in_sight
     return display_all_players_in_sight_message if all_players_in_sight?
 
