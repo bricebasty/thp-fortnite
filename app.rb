@@ -18,4 +18,4 @@ def play
   end
 end
 
-binding.pry
+play

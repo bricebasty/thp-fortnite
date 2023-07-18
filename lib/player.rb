@@ -21,9 +21,11 @@ class Player
 
   def attacks(other_player)
     damage = compute_damage
-    puts "\n\e[33m\e[1m#{@name}\e[31m attaque \e[33m#{other_player::name}\e[0m et lui inflige \e[31m\e[1m#{damage} point(s) de dommages\e[0m"
-    other_player.gets_damage(damage)
-    sleep 1
+    if other_player.life_points > 0
+      puts "\n\e[33m\e[1m#{@name}\e[31m attaque \e[33m#{other_player::name}\e[0m et lui inflige \e[31m\e[1m#{damage} point(s) de dommages\e[0m"
+      other_player.gets_damage(damage)
+      sleep 0.5
+    end
   end
 end
 
@@ -50,17 +52,16 @@ class HumanPlayer < Player
     if found_weapon_level > @weapon_level
       @weapon_level = found_weapon_level
       puts "\n\e[32mYouhou ! elle est meilleure que ton arme actuelle : \e[1mtu la prends.\e[0m"
-      sleep 1
+      sleep 0.5
     elsif found_weapon_level <= @weapon_level
       puts "\n\e[31m\e[1mM@*#$... \e[0m\e[31melle n'est pas mieux que ton arme actuelle...\e[0m"
-      sleep 1
+      sleep 0.5
     end
-    sleep 1
   end
 
   def search_health_pack
-    found_health_pack = rand(1..6)
-    case found_health_pack
+    dice = rand(1..6)
+    case dice
     when 1
       puts "\nTu n'as rien trouvé"
     when 2..5
