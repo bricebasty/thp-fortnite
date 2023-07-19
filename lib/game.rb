@@ -69,7 +69,7 @@ class Game
   def show_players
     @human_player.show_state # Affiche l'état du joueur humain
     sleep 0.5
-    puts "\nIl y a \e[31m\e[1m#{@enemies_in_sight.count} ennemis à tuer" # Affiche le nombre d'ennemis en vue
+    puts "\nIl y a \e[31m\e[1m#{@players_left} ennemis à tuer" # Affiche le nombre d'ennemis en vue
   end
 
   def user_prompt
