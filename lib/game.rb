@@ -63,7 +63,9 @@ class Game
   end
 
   def add_enemy
-    @enemies_in_sight << Player.new("Joueur_#{rand(1000..9999)}")
+    if @enemies_in_sight.count < @players_left
+      @enemies_in_sight << Player.new("Joueur_#{rand(1000..9999)}")
+    end
   end
 
   def show_players
